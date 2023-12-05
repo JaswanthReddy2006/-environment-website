@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.donation-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.donation-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.donation-amount {
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.donation-submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.donation-submit:hover {
+    background-color: #0056b3;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1 class="title">Donation Page</h1>
+    <form class="donation-form">
+        <input class="donation-input" type="text" name="name" placeholder="Your Name" required>
+        <input class="donation-input" type="email" name="email" placeholder="Your Email" required>
+        <input class="donation-amount" type="number" name="amount" placeholder="Donation Amount" min="1" required>
+        <select class="donation-input" name="frequency" required>
+            <option value="one-time">One-time</option>
+            <option value="
